@@ -122,8 +122,8 @@
  
  
  /* Guilds */
-
  
+
  
  
  /* Sidebar */
@@ -140,14 +140,47 @@
  
  div[class^="sidebar-"]>nav>div[class^="searchBar"] {
 	 height: 54px;
+ }
+ 
+ /* members wrapper */
+ .container-2o3qEW {
+	 --background-secondary: rgba(var(--black), 0.4);
+	 --background-modifier-hover: rgba(var(--white), 0.07);
+	 --background-modifier-active: var(--background-modifier-hover);
+	 --background-modifier-selected: rgba(var(--white), 0.07);
+ }
+ 
+ div[data-list-id^="members-"] [class*="placeholder"] {
+	 --backgorund-primary: var(--text-normal);
+ }
+ 
+ div[class^='nowPlayingColumn'] {
+	 --background-secondary: transparent;
+	 --background-primary: rgba(var(--black), 0.5);
+	 --background-modifier-hover: rgba(var(--white), 0.075);
+ }
+ 
+ #channels div[class^="unread-"] {
+	 --interactive-active: rgba(var(--accent), 1);
+ }
  
  
  /* Sidebar Header */
  
+ nav[aria-label]>div>header {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 height: 54px;
+	 --background-accent: rgba(var(--accent), 1);
+	 --background-modifier-hover: rgba(var(--black), 0.25);
+ }
+ 
  
  /* Outer containers */
  
-
+ body {
+	 background: var(--background-image) center/cover no-repeat;
  }
  
  #app-mount {
