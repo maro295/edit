@@ -178,6 +178,9 @@
 	 background: var(--home-image) top center/110% no-repeat;
  }
  
+ div[class^="unreadMentionsIndicatorBottom-"] {
+	 bottom: 70px;
+ }
  
  #app-mount [data-list-item-id="guildsnav___home"]>div {
 	 color: transparent;
@@ -420,7 +423,19 @@
  div[id^="chat-messages-"][class*="cozy-"] div::before {
 	 --gutter: 13px;
  }
-
+ 
+ .mention {
+	 transition: 150ms ease;
+	 color: rgba(var(--accent), 1) !important;
+	 background-color: rgba(var(--accent), 0.3);
+	 padding: 3px 5px;
+	 border-radius: 5px;
+ }
+ 
+ .mention:hover {
+	 background-color: rgba(var(--accent), 0.3) !important;
+ }
+ 
  #app-mount .container-2cd8Mz {
 	 background: var(--background-primary);
  }
